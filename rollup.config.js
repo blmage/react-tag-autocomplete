@@ -19,7 +19,12 @@ export default [
     output: {
       name: 'ReactTags',
       file: pkg.browser,
-      format: 'umd'
+      format: 'umd',
+      globals: {
+        'react': 'React',
+        'react-dom': 'ReactDOM',
+        'prop-types': 'PropTypes'
+      }
     }
   },
   {
@@ -41,7 +46,8 @@ export default [
     ],
     output: {
       file: pkg.main,
-      format: 'cjs'
+      format: 'cjs',
+      exports: 'default'
     }
   }
 ]
