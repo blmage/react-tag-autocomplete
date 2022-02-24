@@ -123,7 +123,7 @@
 
 }
 
-.react-tags__suggestions ul {
+.react-tags__suggestions div[role="listbox"] {
   margin: 4px -1px;
   padding: 0;
   list-style: none;
@@ -133,27 +133,27 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.react-tags__suggestions li {
+.react-tags__suggestions div[role="option"] {
   border-bottom: 1px solid #ddd;
   padding: 6px 8px;
 }
 
-.react-tags__suggestions li mark {
+.react-tags__suggestions div[role="option"] mark {
   text-decoration: underline;
   background: none;
   font-weight: 600;
 }
 
-.react-tags__suggestions li:hover {
+.react-tags__suggestions div[role="option"]:hover {
   cursor: pointer;
   background: #eee;
 }
 
-.react-tags__suggestions li.is-active {
+.react-tags__suggestions div[role="option"].is-active {
   background: #b7cfe0;
 }
 
-.react-tags__suggestions li.is-disabled {
+.react-tags__suggestions div[role="option"].is-disabled {
   opacity: 0.5;
   cursor: auto;
 }
